@@ -1,10 +1,10 @@
-CGO环境
+**CGO环境**
 ```
 apt install -y build-essential
 go env -w CGO_ENABLED=1
 ```
 
-GO环境
+**GO环境**
 ```
 curl -sLo go.tar.gz https://go.dev/dl/go1.20.1.linux-amd64.tar.gz
 tar -C /usr/local -xzf go.tar.gz
