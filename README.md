@@ -1,4 +1,4 @@
-## [sing-box](https://github.com/SagerNet/sing-box) 安装指南
+## [sing-box](https://github.com/SagerNet/sing-box) [hysteria](https://github.com/apernet/hysteria) 安装指南
 
 1. 下载程序（**linux-amd64**）
 
