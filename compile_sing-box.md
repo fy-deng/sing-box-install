@@ -9,7 +9,7 @@ GO环境
 curl -sLo go.tar.gz https://go.dev/dl/go1.20.1.linux-amd64.tar.gz
 tar -C /usr/local -xzf go.tar.gz
 rm go.tar.gz
-echo -e 'export PATH=$PATH:/usr/local/go/bin' > /etc/profile.d/go.sh
+echo -e "export PATH=$PATH:/usr/local/go/bin" > /etc/profile.d/go.sh
 source /etc/profile.d/go.sh
 go version
 ```
