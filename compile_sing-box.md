@@ -2,7 +2,6 @@ CGO环境
 ```
 apt install -y build-essential
 go env -w CGO_ENABLED=1
-go env -w CGO_ENABLED=0
 ```
 
 GO环境
