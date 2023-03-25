@@ -9,7 +9,7 @@ curl -Lo /root/sb https://github.com/SagerNet/sing-box/releases/download/v1.2.0/
 2. 下载配置
 
 ```
-curl -Lo /root/sing-box_config.json https://raw.githubusercontent.com/chika0801/sing-box-examples/main/Hysteria/config_server.json
+curl -Lo /root/sing-box_config.json https://raw.githubusercontent.com/chika0801/sing-box-examples/main/VLESS-XTLS-Vision/config_server.json
 ```
 
 3. 下载systemctl配置
