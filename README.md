@@ -35,3 +35,5 @@ systemctl enable --now sing-box && sleep 0.2 && systemctl status sing-box
 | 检查 | `/root/sing-box check -c sing-box_config.json` |
 | 查看日志 | `journalctl -u sing-box --output cat -e` |
 | 实时日志 | `journalctl -u sing-box --output cat -f` |
+
+[**客户端配置示例**](https://github.com/chika0801/sing-box-examples/blob/main/VLESS-XTLS-Vision/config_client.json)
