@@ -1,7 +1,6 @@
 **CGO环境**
 ```
 apt install -y build-essential
-go env -w CGO_ENABLED=1
 ```
 
 **GO环境**
@@ -11,7 +10,7 @@ tar -C /usr/local -xzf go.tar.gz
 rm go.tar.gz
 echo -e "export PATH=$PATH:/usr/local/go/bin" > /etc/profile.d/go.sh
 source /etc/profile.d/go.sh
-go version
+go env -w CGO_ENABLED=1
 ```
 
 **linux-amd64**
