@@ -10,7 +10,7 @@ tar -C /usr/local -xzf go.tar.gz
 rm go.tar.gz
 echo -e "export PATH=$PATH:/usr/local/go/bin" > /etc/profile.d/go.sh
 source /etc/profile.d/go.sh
-go env -w CGO_ENABLED=1
+go version
 ```
 
 **linux-amd64**
