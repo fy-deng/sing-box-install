@@ -19,7 +19,7 @@ go env -w CGO_ENABLED=1
 **linux-amd64**
 
 ```
-go install -v -tags with_quic,with_wireguard,with_utls,with_reality_server github.com/sagernet/sing-box/cmd/sing-box@dev-next
+go install -v -tags with_wireguard,with_quic,with_utls,with_reality_server github.com/sagernet/sing-box/cmd/sing-box@dev-next
 ```
 
 **windows-amd64**
