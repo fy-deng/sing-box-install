@@ -5,13 +5,13 @@
 :. linux-amd64
 
 ```
-curl -Lo /root/sb https://github.com/SagerNet/sing-box/releases/download/v1.2.3/sing-box-1.2.3-linux-amd64.tar.gz && tar -xzf /root/sb && cp -f /root/sing-box-*/sing-box /usr/local/bin/ && rm -r /root/sb /root/sing-box-* && ln -s /usr/local/bing/sing-box /usr/bin/sing-box
+curl -Lo /root/sb https://github.com/SagerNet/sing-box/releases/download/v1.2.3/sing-box-1.2.3-linux-amd64.tar.gz && tar -xzf /root/sb && cp -f /root/sing-box-*/sing-box /usr/local/bin/ && rm -r /root/sb /root/sing-box-*
 ```
 
 :. linux-arm64
 
 ```
-curl -Lo /root/sb https://github.com/SagerNet/sing-box/releases/download/v1.2.3/sing-box-1.2.3-linux-arm64.tar.gz && tar -xzf /root/sb && cp -f /root/sing-box-*/sing-box /usr/local/bin/ && rm -r /root/sb /root/sing-box-* && ln -s /usr/local/bing/sing-box /usr/bin/sing-box
+curl -Lo /root/sb https://github.com/SagerNet/sing-box/releases/download/v1.2.3/sing-box-1.2.3-linux-arm64.tar.gz && tar -xzf /root/sb && cp -f /root/sing-box-*/sing-box /usr/local/bin/ && rm -r /root/sb /root/sing-box-*
 ```
 
 2. 下载配置并更新
