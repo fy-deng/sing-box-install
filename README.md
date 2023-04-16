@@ -5,33 +5,33 @@
 :. linux-amd64
 
 ```
-curl -Lo /root/sb.tar.gz https://github.com/SagerNet/sing-box/releases/download/v1.2.3/sing-box-1.2.3-linux-amd64.tar.gz && \
-tar -xzf /root/sb.tar.gz -C /root && \
-cp -f /root/sing-box-*/sing-box /usr/local/bin/ && \
-rm -rf /root/sb.tar.gz /root/sing-box-*
+curl -Lo ~/sb.tar.gz https://github.com/SagerNet/sing-box/releases/download/v1.2.3/sing-box-1.2.3-linux-amd64.tar.gz && \
+tar -xzf ~/sb.tar.gz -C ~/ && \
+sudo cp -f ~/sing-box-*/sing-box /usr/local/bin/ && \
+rm -rf ~/sb.tar.gz ~/sing-box-*
 ```
 
 :. linux-arm64
 
 ```
-curl -Lo /root/sb.tar.gz https://github.com/SagerNet/sing-box/releases/download/v1.2.3/sing-box-1.2.3-linux-arm64.tar.gz && \
-tar -xzf /root/sb.tar.gz -C /root && \
-cp -f /root/sing-box-*/sing-box /usr/local/bin/ && \
-rm -rf /root/sb.tar.gz /root/sing-box-*
+curl -Lo ~/sb.tar.gz https://github.com/SagerNet/sing-box/releases/download/v1.2.3/sing-box-1.2.3-linux-arm64.tar.gz && \
+tar -xzf ~/sb.tar.gz -C ~/ && \
+sudo cp -f ~/sing-box-*/sing-box /usr/local/bin/ && \
+rm -rf ~/sb.tar.gz ~/sing-box-*
 ```
 
 2. 创建配置文件并按需修改
 
 ```
 sudo mkdir -p /var/lib/sing-box /etc/sing-box && \
-curl -Lo /etc/sing-box/config.json https://raw.githubusercontent.com/fy-deng/sing-box-install/diy/config.json
+sudo curl -Lo /etc/sing-box/config.json https://raw.githubusercontent.com/fy-deng/sing-box-install/diy/config.json
 ```
 
 3. 下载并配置 systemd
 
 ```
-curl -Lo /etc/systemd/system/sing-box.service https://raw.githubusercontent.com/fy-deng/sing-box-install/diy/sing-box.service && \
-systemctl daemon-reload
+sudo curl -Lo /etc/systemd/system/sing-box.service https://raw.githubusercontent.com/fy-deng/sing-box-install/diy/sing-box.service && \
+sudo systemctl daemon-reload
 ```
 
 4. 上传证书和私钥
@@ -41,7 +41,7 @@ systemctl daemon-reload
 5. 启动程序
 
 ```
-systemctl enable --now sing-box && sleep 0.2 && systemctl status sing-box
+sudo systemctl enable --now sing-box && sleep 0.2 && sudo systemctl status sing-box
 ```
 
 | 项目 | |
