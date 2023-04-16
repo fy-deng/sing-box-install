@@ -1,60 +1,58 @@
 {
-  "log": {
-    "level": "trace",
-    "timestamp": true
-  },
-  "inbounds": [
-    {
-      "type": "vless",
-      "tag": "vless-in",
-      "listen": "::",
-      "listen_port": 443,
-      "sniff": true,
-      "sniff_override_destination": true,
-      "users": [
-        {
-          "uuid": "puuid",
-          "flow": "xtls-rprx-vision"
-        }
-      ],
-      "tls": {
-        "enabled": true,
-        "server_name": "www.microsoft.com",
-        "reality": {
-          "enabled": true,
-          "handshake": {
-            "server": "www.microsoft.com",
-            "server_port": 443
-          },
-          "private_key": "pkey",
-          "short_id": [
-            "pshortid"
-          ]
-        }
-      }
-    }
-  ],
-  "outbounds": [
-    {
-      "type": "direct",
-      "tag": "direct"
-    },
-    {
-      "type": "block",
-      "tag": "block"
-    }
-  ],
-  "route": {
-    "rules": [
-      {
-        "geoip": "cn",
-        "outbound": "block"
-      },
-      {
-        "geosite": "category-ads-all",
-        "outbound": "block"
-      }
-    ],
-    "final": "direct"
-  }
+	"log": {
+		"level": "info",
+		"timestamp": true
+	},
+	"route": {
+		"rules": [
+			{
+				"geoip": [
+					"cn"
+				],
+				"outbound": "block"
+			}
+		]
+	},
+	"inbounds": [
+		{
+			"type": "vless",
+			"tag": "vless-in",
+			"listen": "::",
+			"listen_port": 443,
+			"sniff": true,
+			"sniff_override_destination": true,
+			"domain_strategy": "ipv4_only",
+			"users": [
+				{
+					"uuid": "ee48f7be-6ae9-5654-9b61-8466aa8e16bc",
+					"flow": "xtls-rprx-vision"
+				}
+			],
+			"tls": {
+				"enabled": true,
+				"server_name": "www.lovelive-anime.jp",
+				"reality": {
+					"enabled": true,
+					"handshake": {
+						"server": "www.lovelive-anime.jp",
+						"server_port": 443
+					},
+					"private_key": "2KZ4uouMKgI8nR-LDJNP1_MHisCJOmKGj9jUjZLncVU",
+					"short_id": [
+						"6ba85179e30d4fc2"
+					]
+				}
+			}
+		}
+	],
+	"outbounds": [
+		{
+			"type": "direct",
+			"tag": "direct"
+		},
+		{
+			"type": "block",
+			"tag": "block"
+		}
+	]
 }
