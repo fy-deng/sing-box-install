@@ -5,7 +5,7 @@
 :. linux-amd64
 
 ```
-curl -Lo ~/sb.tar.gz https://github.com/SagerNet/sing-box/releases/download/v1.2.6/sing-box-1.2.6-linux-amd64.tar.gz && \
+curl -Lo ~/sb.tar.gz https://github.com/SagerNet/sing-box/releases/download/v1.2.7/sing-box-1.2.7-linux-amd64.tar.gz && \
 tar -xzf ~/sb.tar.gz -C ~/ && \
 sudo cp -f ~/sing-box-*/sing-box /usr/local/bin/ && \
 rm -rf ~/sb.tar.gz ~/sing-box-*
@@ -14,7 +14,7 @@ rm -rf ~/sb.tar.gz ~/sing-box-*
 :. linux-arm64
 
 ```
-curl -Lo ~/sb.tar.gz https://github.com/SagerNet/sing-box/releases/download/v1.2.6/sing-box-1.2.6-linux-arm64.tar.gz && \
+curl -Lo ~/sb.tar.gz https://github.com/SagerNet/sing-box/releases/download/v1.2.7/sing-box-1.2.7-linux-arm64.tar.gz && \
 tar -xzf ~/sb.tar.gz -C ~/ && \
 sudo cp -f ~/sing-box-*/sing-box /usr/local/bin/ && \
 rm -rf ~/sb.tar.gz ~/sing-box-*
@@ -44,12 +44,12 @@ sudo systemctl daemon-reload
 sudo systemctl enable --now sing-box && sleep 0.2 && sudo systemctl status sing-box
 ```
 
-| 项目 | |
-| :--- | :--- |
-| 程序 | **/usr/local/bin/sing-box** |
-| 配置 | **/etc/sing-box/config.json** |
-| 检查 | `sing-box check -c /etc/sing-box/config.json` |
-| 查看日志 | `journalctl -u sing-box --output cat -e` |
-| 实时日志 | `journalctl -u sing-box --output cat -f` |
+| 项目     |                                               |
+| :------- | :-------------------------------------------- |
+| 程序     | **/usr/local/bin/sing-box**                   |
+| 配置     | **/etc/sing-box/config.json**                 |
+| 检查     | `sing-box check -c /etc/sing-box/config.json` |
+| 查看日志 | `journalctl -u sing-box --output cat -e`      |
+| 实时日志 | `journalctl -u sing-box --output cat -f`      |
 
 [**客户端配置示例**](https://github.com/chika0801/sing-box-examples/blob/main/VLESS-XTLS-Vision/config_client.json)
