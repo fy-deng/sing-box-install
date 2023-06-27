@@ -5,7 +5,7 @@
 :. linux-amd64
 
 ```
-curl -Lo ~/sb.tar.gz https://github.com/SagerNet/sing-box/releases/download/v1.2.7/sing-box-1.2.7-linux-amd64.tar.gz && \
+curl -Lo ~/sb.tar.gz https://github.com/SagerNet/sing-box/releases/download/v1.3.0/sing-box-1.3.0-linux-amd64.tar.gz && \
 tar -xzf ~/sb.tar.gz -C ~/ && \
 sudo cp -f ~/sing-box-*/sing-box /usr/local/bin/ && \
 rm -rf ~/sb.tar.gz ~/sing-box-*
@@ -14,7 +14,7 @@ rm -rf ~/sb.tar.gz ~/sing-box-*
 :. linux-arm64
 
 ```
-curl -Lo ~/sb.tar.gz https://github.com/SagerNet/sing-box/releases/download/v1.2.7/sing-box-1.2.7-linux-arm64.tar.gz && \
+curl -Lo ~/sb.tar.gz https://github.com/SagerNet/sing-box/releases/download/v1.3.0/sing-box-1.3.0-linux-arm64.tar.gz && \
 tar -xzf ~/sb.tar.gz -C ~/ && \
 sudo cp -f ~/sing-box-*/sing-box /usr/local/bin/ && \
 rm -rf ~/sb.tar.gz ~/sing-box-*
